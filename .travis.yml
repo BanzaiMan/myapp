@@ -1,1 +1,10 @@
 script: true
+deploy:
+  provider: openshift
+  user: hasari@redhat.com
+  password:
+    secure: LuPCHGO6YWdorhjbl/RpKaI1A0km2ROFzp2+Rsngz2Mk45FsrinUuCbCEmqz+pFw3V3/hraU2vsL64OyZ7SRwWteVsGOxOfzesVtgzK+++m7Dz+VY0pq0ZJpukWZJh65BnnDIPkdS2nwYrCkI2xIB3naJMQUz7PKZOz/uH6EE8I=
+  app: myapp
+  domain: qkst
+  on:
+    repo: BanzaiMan/myapp
